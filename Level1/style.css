@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 10vh;
+    margin: 20px;
+    Border: 1px solid black;
+}
+
+main {
+    height: 80vh;
+    margin: 20px;
+    Border: 1px solid black;
+}
+
+footer {
+    height: 10vh;
+    margin: 20px;
+    Border: 1px solid black;
+}

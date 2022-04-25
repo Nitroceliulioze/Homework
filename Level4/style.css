@@ -1,0 +1,89 @@
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "A A A A A A A A A A A A"
+      "A A A A A A A A A A A A"
+      "B B B B B B B B B B E E"
+      "B B B B B B B B B B E E"
+      "B B B B B B B B B B E E"
+      "B B B B B B B B B B E E"
+      "B B B B B B B B B B E E"
+      "place place place place place place place place place place E E"
+      "place place place place place place place place place place E E"
+      "place place place place place place place place place place E E"
+      "place place place place place place place place place place E E"
+      "place place place place place place place place place place E E";
+      height: 100vh;
+  }
+  
+.A { 
+      grid-area: A;
+      margin:10px;
+      border: 1px solid black;
+}
+  
+.B { 
+    grid-area: B;
+    margin:10px;
+    border: 1px solid black; 
+}
+
+.place { 
+    display:flex;
+    flex-direction: row;
+    grid-area: place;
+    margin:10px;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.C, .D {
+    border: 1px solid black;
+    width: 50%;
+}
+
+  
+.E { 
+    grid-area: E;
+    margin:10px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+        }
+    .A {
+        height: 20vh;
+    }
+
+    .B {
+        height: 40vh;
+    }
+
+    .place {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .C {
+        height: 20vh;
+        width: 50%;
+    }
+
+    .D {
+        height: 20vh;
+        width: 50%;     
+    }
+
+    .E {
+        height: 20vh;
+    }
+}

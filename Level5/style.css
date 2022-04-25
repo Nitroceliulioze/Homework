@@ -1,0 +1,65 @@
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "A A A A A A A A A A A A"
+      "A A A A A A A A A A A A"
+      "C C B B B B B B B B E E"
+      "C C B B B B B B B B E E"
+      "C C D D D D D D D D E E"
+      "C C D D D D D D D D E E"
+      "C C D D D D D D D D E E"
+      "C C D D D D D D D D E E"
+      "C C D D D D D D D D E E"
+      "C C D D D D D D D D E E"
+      "F F F F F F F F F F F F"
+      "F F F F F F F F F F F F";
+      height: 100vh;
+}
+  
+.A { 
+    grid-area: A;
+    margin:10px;
+    border: 1px solid black;
+}
+  
+.B { 
+    grid-area: B;
+    margin:10px;
+    border: 1px solid black;
+}
+  
+.C { 
+    grid-area: C;
+    margin:10px;
+    border: 1px solid black; 
+}
+  
+.D { 
+    grid-area: D;
+    margin:10px;
+    border: 1px solid black;
+}
+  
+.E { 
+    grid-area: E;
+    margin:10px;
+    border: 1px solid black;
+}
+  
+.F { 
+    grid-area: F;
+    margin:10px;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        }
+}
